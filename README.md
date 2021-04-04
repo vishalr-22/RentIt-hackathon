@@ -1,7 +1,7 @@
 # Getting Started with Rent It React App
 ## Note : Download node_MODULES first before npm start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Our Youtube Video link for Project: https://www.youtube.com/watch?v=HZJOfa5AXNY&ab_channel=PIYUSHSHARMA
 
 ## Available Scripts
 
