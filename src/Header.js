@@ -5,8 +5,11 @@ import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 function Header() {
+    const history = useHistory();
     return (
         <div className='header'>
             <Link to='/'>
@@ -18,13 +21,14 @@ function Header() {
             </Link>
            
             <div className='header__center'>
-                <input type="text" placeholder = 'search...'/>
+                <input type="text" placeholder = 'Find your holiday home here!'/>
                 <SearchIcon />
             </div>
 
             <div className='header__right'>
-                <a href = '#'>Sign Up</a>
-                <a href = "#">Login</a>
+                 <Button onClick={() => history.push('/')} variant='outlined'>Home</Button>
+                 <Button onClick={() => history.push('/logged in')} variant='outlined'>Login</Button>
+                 <Button onClick={() => history.push('/sign')} variant='outlined'>Sign Up</Button>
                 {/* <LanguageIcon />
                 <ExpandMoreIcon />
                 <Avatar /> */}
